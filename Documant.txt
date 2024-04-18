@@ -1,0 +1,44 @@
+Setting up and Running the Node.js Application Locally
+
+
+Prerequisites:
+Node.js installed on your local machine.
+MongoDB installed and running locally.
+
+
+Steps:
+Clone or download the repository containing the Node.js application code.
+Navigate to the project directory in your terminal.
+Install the dependencies by running the following command:
+
+
+npm install
+Start the Node.js server by running the following command:
+
+npm start
+This will start the server on the default port 3000.
+
+
+Interacting with the API Endpoints
+Using Postman:
+Open Postman application.
+Set the HTTP method (GET, POST, PUT, DELETE) for the desired endpoint.
+Enter the API URL for the endpoint you want to interact with (e.g., http://localhost:3000/api/users).
+If necessary, set request headers or request body based on the endpoint requirements.
+Click on the "Send" button to make the request.
+View the response from the server in the Postman interface.
+
+
+Using curl (Command Line):
+Open a terminal window.
+Use the appropriate curl command with the desired HTTP method and API URL.
+Example for GET request:
+bash
+Copy code
+curl http://localhost:3000/api/users
+Example for POST request:
+json
+Copy code
+curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "johndoe@example.com", "age": 30}' http://localhost:3000/api/users
+Press Enter to execute the curl command.
+View the response from the server in the terminal output.
